@@ -1,0 +1,22 @@
+{
+  "name": "hw_8.1.1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "npx cypress open",
+    "cy:run": "npx cypress run",
+    "cy:dashboard": "cypress run --record --key 37db1569-03aa-48e3-91b7-9533b1c87e4b",
+    "cy:run:second": "npm run cy:run --config-file cypress.config-2.json --record --key 37db1569-03aa-48e3-91b7-9533b1c87e4b"
+  },
+  "author": "Valeria Spektor",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.7.2",
+    "gitignore": "^0.7.0",
+    "jest": "^29.7.0",
+    "mysql": "^2.18.1",
+    "nodejs": "^0.0.0"
+  }
+}
