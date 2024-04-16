@@ -7,8 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "cy:open": "npx cypress open",
     "cy:run": "npx cypress run",
-    "cy:dashboard": "cypress run --record --key 37db1569-03aa-48e3-91b7-9533b1c87e4b",
-    "cy:run:second": "npm run cy:run --config-file cypress.config-2.json --record --key 37db1569-03aa-48e3-91b7-9533b1c87e4b"
+    "cy:dashboard": "cypress run --record --key 281c60f4-f098-4d3c-96f1-333882ff0b53"
   },
   "author": "Valeria Spektor",
   "license": "ISC",
