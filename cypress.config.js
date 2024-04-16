@@ -1,7 +1,6 @@
 const { defineConfig } = require("cypress");
 const mysql = require("mysql");
 
-
 function executeQuery(query, config) {
   const connection = mysql.createConnection(config.env.db);
   
@@ -25,6 +24,7 @@ function executeQuery(query, config) {
 }
 
 module.exports = defineConfig({
+  projectId: 'hiq8cf', 
   env: {
     db: {
       host: "sql6.freesqldatabase.com",
@@ -35,7 +35,7 @@ module.exports = defineConfig({
   },
   e2e: {
     setupNodeEvents(on, config) {
-      // Регистрируем задачу queryDb
+      // Register the queryDb task
       on("task", {
         queryDb: (query) => {
           return executeQuery(query, config);
@@ -44,4 +44,3 @@ module.exports = defineConfig({
     }
   }
 });
-
